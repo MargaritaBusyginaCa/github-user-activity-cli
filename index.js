@@ -2,8 +2,9 @@
 const readline = require("readline");
 const rl = readline.createInterface(process.stdin, process.stdout);
 
-let username = "MargaritaBusyginaCa";
+let username = "";
 rl.question("github-activity: ", (response) => {
+  username = response;
   getData();
   rl.close();
 });
@@ -20,5 +21,6 @@ async function getData() {
     console.log(json);
   } catch (error) {
     console.log(error.message);
+    console.log("Make sure the username you entered is valid.");
   }
 }
