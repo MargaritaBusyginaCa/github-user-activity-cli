@@ -1,7 +1,0 @@
-{
-  "PushEvent": "Pushed {commit_count} commits to {repo}",
-  "CreateEvent_branch": "Created branch {branch} in {repo}",
-  "CreateEvent_repository": "Created repository {repo}",
-  "IssuesEvent_opened": "Opened a new issue in {repo}",
-  "WatchEvent": "Starred {repo}"
-}

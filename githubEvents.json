@@ -1,0 +1,270 @@
+{
+  "githubEvents": [
+    { "name": "CommitCommentEvent", "message": "test" },
+    {
+      "name": "PushEvent",
+      "message": "Pushed {commit_count} commits to {repo}",
+      "events": [
+        {
+          "id": "47401856554",
+          "type": "PushEvent",
+          "actor": {
+            "id": 74435192,
+            "login": "MargaritaBusyginaCa",
+            "display_login": "MargaritaBusyginaCa",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MargaritaBusyginaCa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/74435192?"
+          },
+          "repo": {
+            "id": 945560216,
+            "name": "MargaritaBusyginaCa/cli-task-tracker",
+            "url": "https://api.github.com/repos/MargaritaBusyginaCa/cli-task-tracker"
+          },
+          "payload": {
+            "repository_id": 945560216,
+            "push_id": 23091185289,
+            "size": 1,
+            "distinct_size": 1,
+            "ref": "refs/heads/main",
+            "head": "2bd5e6fb3bb4ff357348391382dee5bbeae4c3bd",
+            "before": "32d2eb75232dec37acbab9743a094fe7f01e2e8c",
+            "commits": [
+              {
+                "sha": "2bd5e6fb3bb4ff357348391382dee5bbeae4c3bd",
+                "author": {
+                  "email": "busygina.rita.ca@gmail.com",
+                  "name": "Margarita (Rita) Busygina"
+                },
+                "message": "add update function",
+                "distinct": true,
+                "url": "https://api.github.com/repos/MargaritaBusyginaCa/cli-task-tracker/commits/2bd5e6fb3bb4ff357348391382dee5bbeae4c3bd"
+              }
+            ]
+          },
+          "public": true,
+          "created_at": "2025-03-10T20:21:56Z"
+        }
+      ]
+    },
+    {
+      "name": "CreateEvent",
+      "ref_type": "branch",
+      "message": "Created branch {branch} in {repo}",
+      "events": [
+        {
+          "id": "47358436487",
+          "type": "CreateEvent",
+          "actor": {
+            "id": 74435192,
+            "login": "MargaritaBusyginaCa",
+            "display_login": "MargaritaBusyginaCa",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MargaritaBusyginaCa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/74435192?"
+          },
+          "repo": {
+            "id": 945560216,
+            "name": "MargaritaBusyginaCa/cli-task-tracker",
+            "url": "https://api.github.com/repos/MargaritaBusyginaCa/cli-task-tracker"
+          },
+          "payload": {
+            "ref": null,
+            "ref_type": "repository",
+            "master_branch": "main",
+            "description": null,
+            "pusher_type": "user"
+          },
+          "public": true,
+          "created_at": "2025-03-09T17:53:35Z"
+        }
+      ]
+    },
+    {
+      "name": "CreateEvent",
+      "ref_type": "repository",
+      "message": "Created repository {repo}",
+      "events": [
+        {
+          "id": "47358436487",
+          "type": "CreateEvent",
+          "actor": {
+            "id": 74435192,
+            "login": "MargaritaBusyginaCa",
+            "display_login": "MargaritaBusyginaCa",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MargaritaBusyginaCa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/74435192?"
+          },
+          "repo": {
+            "id": 945560216,
+            "name": "MargaritaBusyginaCa/cli-task-tracker",
+            "url": "https://api.github.com/repos/MargaritaBusyginaCa/cli-task-tracker"
+          },
+          "payload": {
+            "ref": null,
+            "ref_type": "repository",
+            "master_branch": "main",
+            "description": null,
+            "pusher_type": "user"
+          },
+          "public": true,
+          "created_at": "2025-03-09T17:53:35Z"
+        }
+      ]
+    },
+    {
+      "name": "CreateEvent",
+      "ref_type": "tag",
+      "message": "Created tag {branch} in {repo}",
+      "events": [
+        {
+          "id": "47358436487",
+          "type": "CreateEvent",
+          "actor": {
+            "id": 74435192,
+            "login": "MargaritaBusyginaCa",
+            "display_login": "MargaritaBusyginaCa",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MargaritaBusyginaCa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/74435192?"
+          },
+          "repo": {
+            "id": 945560216,
+            "name": "MargaritaBusyginaCa/cli-task-tracker",
+            "url": "https://api.github.com/repos/MargaritaBusyginaCa/cli-task-tracker"
+          },
+          "payload": {
+            "ref": null,
+            "ref_type": "repository",
+            "master_branch": "main",
+            "description": null,
+            "pusher_type": "user"
+          },
+          "public": true,
+          "created_at": "2025-03-09T17:53:35Z"
+        }
+      ]
+    },
+    {
+      "name": "IssuesEvent",
+      "message": "Opened a new issue in {repo}",
+      "events": [
+        {
+          "id": "47442723321",
+          "type": "IssuesEvent",
+          "actor": {
+            "id": 74435192,
+            "login": "MargaritaBusyginaCa",
+            "display_login": "MargaritaBusyginaCa",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/MargaritaBusyginaCa",
+            "avatar_url": "https://avatars.githubusercontent.com/u/74435192?"
+          },
+          "repo": {
+            "id": 80249302,
+            "name": "craftcms/cms",
+            "url": "https://api.github.com/repos/craftcms/cms"
+          },
+          "payload": {
+            "action": "opened",
+            "issue": {
+              "url": "https://api.github.com/repos/craftcms/cms/issues/16867",
+              "repository_url": "https://api.github.com/repos/craftcms/cms",
+              "labels_url": "https://api.github.com/repos/craftcms/cms/issues/16867/labels{/name}",
+              "comments_url": "https://api.github.com/repos/craftcms/cms/issues/16867/comments",
+              "events_url": "https://api.github.com/repos/craftcms/cms/issues/16867/events",
+              "html_url": "https://github.com/craftcms/cms/issues/16867",
+              "id": 2911351088,
+              "node_id": "I_kwDOBMiB1s6th7Ew",
+              "number": 16867,
+              "title": "[4.x]: Data in drafts for different sites gets merged.",
+              "user": {
+                "login": "MargaritaBusyginaCa",
+                "id": 74435192,
+                "node_id": "MDQ6VXNlcjc0NDM1MTky",
+                "avatar_url": "https://avatars.githubusercontent.com/u/74435192?v=4",
+                "gravatar_id": "",
+                "url": "https://api.github.com/users/MargaritaBusyginaCa",
+                "html_url": "https://github.com/MargaritaBusyginaCa",
+                "followers_url": "https://api.github.com/users/MargaritaBusyginaCa/followers",
+                "following_url": "https://api.github.com/users/MargaritaBusyginaCa/following{/other_user}",
+                "gists_url": "https://api.github.com/users/MargaritaBusyginaCa/gists{/gist_id}",
+                "starred_url": "https://api.github.com/users/MargaritaBusyginaCa/starred{/owner}{/repo}",
+                "subscriptions_url": "https://api.github.com/users/MargaritaBusyginaCa/subscriptions",
+                "organizations_url": "https://api.github.com/users/MargaritaBusyginaCa/orgs",
+                "repos_url": "https://api.github.com/users/MargaritaBusyginaCa/repos",
+                "events_url": "https://api.github.com/users/MargaritaBusyginaCa/events{/privacy}",
+                "received_events_url": "https://api.github.com/users/MargaritaBusyginaCa/received_events",
+                "type": "User",
+                "user_view_type": "public",
+                "site_admin": false
+              },
+              "labels": [
+                {
+                  "id": 527359859,
+                  "node_id": "MDU6TGFiZWw1MjczNTk4NTk=",
+                  "url": "https://api.github.com/repos/craftcms/cms/labels/bug",
+                  "name": "bug",
+                  "color": "EE3F46",
+                  "default": true,
+                  "description": ""
+                },
+                {
+                  "id": 3940058552,
+                  "node_id": "LA_kwDOBMiB1s7q2IW4",
+                  "url": "https://api.github.com/repos/craftcms/cms/labels/craft4",
+                  "name": "craft4",
+                  "color": "FFC274",
+                  "default": false,
+                  "description": ""
+                }
+              ],
+              "state": "open",
+              "locked": false,
+              "assignee": null,
+              "assignees": [],
+              "milestone": null,
+              "comments": 0,
+              "created_at": "2025-03-11T17:31:46Z",
+              "updated_at": "2025-03-11T17:31:46Z",
+              "closed_at": null,
+              "author_association": "NONE",
+              "sub_issues_summary": {
+                "total": 0,
+                "completed": 0,
+                "percent_completed": 0
+              },
+              "active_lock_reason": null,
+              "body": "### What happened?\n\n### Description\nWhen creating a draft and adding content to it, switching to another site (which, in our case, is the same site in a different language) causes the data to merge unexpectedly.\n\n### Steps to reproduce\n\n1. Add an entry\n2. Add a draft\n3. Add content to the draft\n4. Then switch to another site \n5. Add content in a different language \n6. Go back to your first site\n\n### Expected behavior\nThe data is kept separate to each site\n\n### Actual behavior\nData gets overwritten\n\n### Craft CMS version\n\n4.14.3\n\n### PHP version\n\n8.2.23\n\n### Operating system and version\n\nLinux 4.14.248-189.473.amzn2.x86_64\n\n### Database type and version\n\nMySQL 8.0.36\n\n### Image driver and version\n\nGD 8.2.23\n\n### Installed plugins and versions\n\n-\n",
+              "reactions": {
+                "url": "https://api.github.com/repos/craftcms/cms/issues/16867/reactions",
+                "total_count": 0,
+                "+1": 0,
+                "-1": 0,
+                "laugh": 0,
+                "hooray": 0,
+                "confused": 0,
+                "heart": 0,
+                "rocket": 0,
+                "eyes": 0
+              },
+              "timeline_url": "https://api.github.com/repos/craftcms/cms/issues/16867/timeline",
+              "performed_via_github_app": null,
+              "state_reason": null
+            }
+          },
+          "public": true,
+          "created_at": "2025-03-11T17:31:48Z",
+          "org": {
+            "id": 22369139,
+            "login": "craftcms",
+            "gravatar_id": "",
+            "url": "https://api.github.com/orgs/craftcms",
+            "avatar_url": "https://avatars.githubusercontent.com/u/22369139?"
+          }
+        }
+      ]
+    }
+  ]
+}
