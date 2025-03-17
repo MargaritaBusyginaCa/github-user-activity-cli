@@ -1,10 +1,6 @@
 //readline is used to create an interface for reading users input and output data
 const readline = require("readline");
-// const fs = require("fs");
 const rl = readline.createInterface(process.stdin, process.stdout);
-// const githubEvents = JSON.parse(
-//   fs.readFileSync("githubEvents.json")
-// ).githubEvents;
 
 let username = "";
 let recentEvents;
@@ -31,34 +27,57 @@ async function getData() {
 }
 
 function filterActivity() {
-  //loop over the array,
-  //for each object in the array, get the type of the event and push that object in the json file (only inside of the event)
   for (let i = 0; i < recentEvents.length; i++) {
-    // matchEvent(recentEvents[i]);
     switch (recentEvents[i].type) {
       case "CreateEvent":
-        printEvent(recentEvents[i]);
+        printEvent(recentEvents[i], "Created");
         break;
       case "IssuesEvent":
         messagesToPrint.push(
           `Opened a new issue in ${recentEvents[i].repo.name}`
         );
         break;
+      case "DeleteEvent":
+        printEvent(recentEvents[i], "Delete");
+        break;
+      case "WatchEvent":
+        messagesToPrint.push(`Starred ${recentEvents[i].repo.name}`);
+        break;
+      case "PushEvent":
+        handlePushEvent(recentEvents[i]);
+        break;
     }
   }
-  console.log(messagesToPrint);
+  messagesToPrint.forEach((message) => {
+    console.log(`- ${message}`);
+  });
 }
 
-function printEvent(event) {
+function printEvent(event, eventType) {
   if (event.payload.ref_type === "branch") {
     messagesToPrint.push(
-      `Created branch ${event.payload.master_branch} in ${event.repo.name}`
+      `${eventType} branch ${event.payload.master_branch} in ${event.repo.name}`
     );
   } else if (event.payload.ref_type === "repository") {
     messagesToPrint.push(`Created repository ${event.repo.name}`);
   } else if (event.payload.ref_type === "tag") {
     messagesToPrint.push(
-      `Created tag ${event.payload.master_branch} in ${event.repo.name}`
+      `${eventType} tag ${event.payload.master_branch} in ${event.repo.name}`
+    );
+  }
+}
+
+let pushEvents = [];
+let groupedPushEvents = [];
+function handlePushEvent(event) {
+  for (let i = 0; i < recentEvents.length; i++) {
+    if (recentEvents[i].type === "PushEvent") {
+      pushEvents.push(recentEvents[i]);
+    }
+  }
+  for (let i = 0; i < recentEvents.length; i++) {
+    groupedPushEvents = pushEvents.find(
+      (element) => element.repo.name === event.repo.name
     );
   }
 }
